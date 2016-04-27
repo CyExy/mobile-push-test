@@ -193,6 +193,12 @@
 				TargetAttributes = {
 					E62CF2E31CD0D87300E14606 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FSJ69QAZTS;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					E62CF2F71CD0D87400E14606 = {
 						CreatedOnToolsVersion = 7.3;
