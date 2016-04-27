@@ -17,6 +17,7 @@
 		E62CF2F21CD0D87300E14606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62CF2F01CD0D87300E14606 /* LaunchScreen.storyboard */; };
 		E62CF2FD1CD0D87400E14606 /* pushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62CF2FC1CD0D87400E14606 /* pushTests.swift */; };
 		E62CF3081CD0D87400E14606 /* pushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62CF3071CD0D87400E14606 /* pushUITests.swift */; };
+		E679D5411CD0EFFF00C77676 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E679D5401CD0EFFF00C77676 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		E62CF3031CD0D87400E14606 /* pushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62CF3071CD0D87400E14606 /* pushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pushUITests.swift; sourceTree = "<group>"; };
 		E62CF3091CD0D87400E14606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E679D5401CD0EFFF00C77676 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E679D5441CD0F3EE00C77676 /* push-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "push-Bridging-Header.h"; sourceTree = "<group>"; };
 		FBCD3198C6433E6EB6DDF64C /* Pods-pushTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushTests/Pods-pushTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +118,7 @@
 		E62CF2DB1CD0D87300E14606 = {
 			isa = PBXGroup;
 			children = (
+				E679D5401CD0EFFF00C77676 /* GoogleService-Info.plist */,
 				E62CF2E61CD0D87300E14606 /* push */,
 				E62CF2FB1CD0D87400E14606 /* pushTests */,
 				E62CF3061CD0D87400E14606 /* pushUITests */,
@@ -143,6 +147,7 @@
 				E62CF2EE1CD0D87300E14606 /* Assets.xcassets */,
 				E62CF2F01CD0D87300E14606 /* LaunchScreen.storyboard */,
 				E62CF2F31CD0D87300E14606 /* Info.plist */,
+				E679D5441CD0F3EE00C77676 /* push-Bridging-Header.h */,
 			);
 			path = push;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E62CF2F21CD0D87300E14606 /* LaunchScreen.storyboard in Resources */,
+				E679D5411CD0EFFF00C77676 /* GoogleService-Info.plist in Resources */,
 				E62CF2EF1CD0D87300E14606 /* Assets.xcassets in Resources */,
 				E62CF2ED1CD0D87300E14606 /* Main.storyboard in Resources */,
 			);
@@ -579,11 +585,14 @@
 			baseConfigurationReference = 2C095CF0FE38B265DA4DBD8A /* Pods-push.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = push/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mybuilder.test.push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "push/push-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -592,11 +601,13 @@
 			baseConfigurationReference = 5C174E250BAC1E569EC43FF9 /* Pods-push.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = push/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mybuilder.test.push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "push/push-Bridging-Header.h";
 			};
 			name = Release;
 		};
