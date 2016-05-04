@@ -5,6 +5,13 @@ use_frameworks!
 
 target 'push' do
     pod 'Google/CloudMessaging'
+    pod 'React', :path => './ReactComponents/node_modules/react-native', :subspecs => [
+        'Core',
+        'RCTImage',
+        'RCTNetwork',
+        'RCTText',
+        'RCTWebSocket'
+    ]
 end
 
 target 'pushTests' do

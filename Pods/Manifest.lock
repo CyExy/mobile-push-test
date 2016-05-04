@@ -23,9 +23,28 @@ PODS:
   - GoogleSymbolUtilities (1.1.0)
   - GoogleUtilities (1.3.0):
     - GoogleSymbolUtilities (~> 1.0)
+  - React/Core (0.24.1)
+  - React/RCTImage (0.24.1):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.24.1):
+    - React/Core
+  - React/RCTText (0.24.1):
+    - React/Core
+  - React/RCTWebSocket (0.24.1):
+    - React/Core
 
 DEPENDENCIES:
   - Google/CloudMessaging
+  - React/Core (from `./ReactComponents/node_modules/react-native`)
+  - React/RCTImage (from `./ReactComponents/node_modules/react-native`)
+  - React/RCTNetwork (from `./ReactComponents/node_modules/react-native`)
+  - React/RCTText (from `./ReactComponents/node_modules/react-native`)
+  - React/RCTWebSocket (from `./ReactComponents/node_modules/react-native`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: "./ReactComponents/node_modules/react-native"
 
 SPEC CHECKSUMS:
   GGLInstanceID: 4a317044f744281b82cd03015f379899f277cad3
@@ -36,7 +55,8 @@ SPEC CHECKSUMS:
   GoogleNetworkingUtilities: ec1e9911aca811eb18b7144394fee6168b607785
   GoogleSymbolUtilities: eb3965ea12710569c7b80db198a39e39b18613f7
   GoogleUtilities: 5c653f7df2eedf0ce0efdfe5afe4f831f375fd7a
+  React: 386bbe687faee56ab75bad6132813945d5857403
 
-PODFILE CHECKSUM: e57aa5850b7da6aacf7e19318fcfad67bb7b5a49
+PODFILE CHECKSUM: 9cf5ad3aa07d970ec317b01117d21174ccef09c8
 
 COCOAPODS: 1.0.0.beta.8

@@ -19,15 +19,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>React.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6616C2DC55A6A3E37643933A196E905C</key>
+		<key>13843E71A04DEF32227B45E319EA76DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>68A5523D3E7B532595F84605029ED683</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>945C3B4B0A55EE8C84DC302AD86F1BAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
