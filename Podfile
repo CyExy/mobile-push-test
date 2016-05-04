@@ -11,7 +11,7 @@ target 'push' do
         'RCTNetwork',
         'RCTText',
         'RCTWebSocket'
-    ]
+    ], :tag => '0.23.1'
 end
 
 target 'pushTests' do
